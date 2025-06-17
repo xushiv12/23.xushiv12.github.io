@@ -1,0 +1,22 @@
+
+<link rel="icon" href="https://github.com/xushiv12/12.xushiv12.github.io/blob/main/docs/1.png?raw=true">
+<title>SSL检查安全器</title>
+<h1>SSL检查安全器</h1>
+请输入您的域名:<input id="a"><br>
+<button onclick="A()">检查是否安全</button><br>
+<p id="b"></p>
+<script>
+function A(){
+	let a=document.getElementById("a").value;
+	fetch("https://yyx.xushi-1009.cc/1",{
+		method:"POST",
+		headers:{
+			"content-type":"application/x-www-form-urlencoded"
+		},
+		body:y1=${a}
+	})
+	.then(b=>b.text())
+	.then(c=>document.getElementById("b").innerHTML=c)
+	.catch(d=>alert("发生错误:"+d));
+}
+</script>
