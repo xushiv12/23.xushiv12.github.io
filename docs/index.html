@@ -13,7 +13,7 @@ function A(){
 		headers:{
 			"content-type":"application/x-www-form-urlencoded"
 		},
-		body:y1=${a}
+		body:`y1=${a}`
 	})
 	.then(b=>b.text())
 	.then(c=>document.getElementById("b").innerHTML=c)
